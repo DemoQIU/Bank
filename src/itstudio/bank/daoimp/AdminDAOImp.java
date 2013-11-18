@@ -4,11 +4,14 @@ import com.ibatis.sqlmap.client.*;
 import itstudio.bank.bean.Admin;
 import itstudio.bank.dao.AdminDAO;
 import itstudio.bank.utils.MD5Util;
-
 import java.io.IOException;
 import java.io.Reader;
 import java.sql.SQLException;
-import java.util.List;
+/**
+ * 用于登陆验证 和找回密码 的具体方法
+ * @author apple
+ *
+ */
 public class AdminDAOImp implements AdminDAO {
 	private static SqlMapClient sqlMapClient=null;
 	

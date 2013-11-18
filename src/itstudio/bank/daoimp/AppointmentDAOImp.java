@@ -1,17 +1,19 @@
 package itstudio.bank.daoimp;
 
-import itstudio.bank.bean.Admin;
 import itstudio.bank.bean.Appointment;
-import itstudio.bank.utils.MD5Util;
+import itstudio.bank.dao.AppointmentDAO;
 
 import java.io.IOException;
 import java.io.Reader;
 import java.sql.SQLException;
 import java.util.Date;
-
 import com.ibatis.sqlmap.client.SqlMapClient;
-
-public class AppointmentDAOImp {
+/**
+ * 用于 预约处理的业务处理
+ * @author apple
+ *
+ */
+public class AppointmentDAOImp implements AppointmentDAO{
 	private static SqlMapClient sqlMapClient=null;
 	
 	static {

@@ -1,4 +1,9 @@
 package itstudio.bank.bean;
+/**
+ * ¹ÜÀíÔ±javabean
+ * @author apple
+ *
+ */
 public class Admin {
 	private int id;
 	private String userName;

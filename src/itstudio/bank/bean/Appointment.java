@@ -1,7 +1,11 @@
 package itstudio.bank.bean;
 
 import java.util.Date;
-
+/**
+ * 客户预约实体类
+ * @author apple
+ *
+ */
 public class Appointment {
 	
 	private int id;
