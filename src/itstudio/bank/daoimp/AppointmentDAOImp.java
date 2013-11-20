@@ -94,7 +94,7 @@ public class AppointmentDAOImp implements AppointmentDAO{
 	}
 	/**
 	 * É¾³ýÔ¤Ô¼
-	 * @param int id Ô¤Ô¼±àºÅ
+	 * @param int id Ô¤Ô¼±àºÅ 
 	 * @return boolean ÊÇ·ñÉ¾³ý³É¹¦
 	 */
 	public boolean deleteAppointment(int id) {
