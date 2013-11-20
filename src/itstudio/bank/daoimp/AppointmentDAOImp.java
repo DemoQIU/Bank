@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.io.Reader;
 import java.sql.SQLException;
 import java.util.Date;
+import java.util.List;
+
 import com.ibatis.sqlmap.client.SqlMapClient;
 /**
  * 用于 预约处理的业务处理
@@ -35,5 +37,17 @@ public class AppointmentDAOImp implements AppointmentDAO{
 			e.printStackTrace();
 		}
 		return false;
+	}
+	public List<Appointment> FindAppointmentList(int currentPage, int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public List<Appointment> FindAppointmentById(Appointment appointment) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public List<Appointment> deleteAppointment(int id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
