@@ -7,7 +7,7 @@ import java.util.Date;
  *
  */
 public class Appointment {
-	
+
 	private int id;
 	private String name;
 	private float tellphone;
@@ -15,8 +15,15 @@ public class Appointment {
 	private Date time; 
 	private String type; 
 	private String content; 
-	private Date systemTime; 
+	private Date systemTime;
+	private String isRead;
 	
+	public String getIsRead() {
+		return isRead;
+	}
+	public void setIsRead(String isRead) {
+		this.isRead = isRead;
+	}
 	public int getId() {
 		return id;
 	}

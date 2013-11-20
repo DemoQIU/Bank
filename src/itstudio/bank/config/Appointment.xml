@@ -6,4 +6,9 @@
 <sqlMap >
 	<typeAlias alias="appointment" type="itstudio.bank.bean.Appointment"/>
 	<insert id="addAppointment" parameterClass="Appointment" >insert into appointment(name,tellphone,email,time,type,content,systemTime) values(#name#,#tellphone#,#email#,#time#,#type#,#content#,#systemTime#)</insert>
+	<select id="findAppoinListnoread" parameterClass="java.util.HashMap" resultClass="Appointment">select * from  appointment where isread is null order by systemtime desc limit #start# , #end# </select>
+	<select id="findAppoinListread" parameterClass="java.util.HashMap" resultClass="Appointment">select * from  appointment where isread=1  order by systemtime desc limit #start# , #end# </select>
+	<select id="findAppointment" parameterClass="int" resultClass="Appointment">select * from  appointment where id=#id# </select>
+	<update id="deleteAppointment" parameterClass="int">update appointment set isread=2 where id=#id# </update>
+	<update id="updateAppointment" parameterClass="int" >update appointment set isread=1 where id=#id# </update>
 </sqlMap>
