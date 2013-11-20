@@ -18,7 +18,7 @@ public class Test {
     	AppointmentDAOImp appointmentDAOImp= new AppointmentDAOImp();
     	Appointment app= new Appointment("xiaosan",12345,"673463786@qq.com",new Date(),"汉子","ceshi");
     	//appointmentDAOImp.addAppointment(app);
-    	//查询未读预约
+    	//查询未读预约 
 		for ( Appointment  appointment:appointmentDAOImp.findAppointmentList(1, 0))
 		{
 			System.out.println( appointment.getId());
