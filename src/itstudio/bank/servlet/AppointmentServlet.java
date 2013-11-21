@@ -40,7 +40,9 @@ public class AppointmentServlet extends HttpServlet {
 		} 
 		String type = request.getParameter("type"); 
 		String content = request.getParameter("content"); 
-		Appointment app= new Appointment(name, tellphone, email, time, type, content);
+		
+		//Appointment app= new Appointment(name, tellphone, email, time, type, content);
+		Appointment app= new Appointment();
 		AppointmentDAOImp appointmentDAOImp= new AppointmentDAOImp();
     	if(appointmentDAOImp.addAppointment(app)){
     		System.out.println("Ô¤Ô¼³É¹¦");

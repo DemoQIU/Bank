@@ -1,7 +1,14 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page import="itstudio.bank.bean.Appointment"%>
+<%@ page import="itstudio.bank.dao.AppointmentDAO"%>
+<%@ page import="itstudio.bank.daoimp.AppointmentDAOImp"%>
 <%
+AppointmentDAOImp appointmentDAOImp= new AppointmentDAOImp();
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+for ( Appointment  appointment:appointmentDAOImp.findAppointmentList(1, 0))
+{
+	System.out.println( appointment.getId());
+}
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">

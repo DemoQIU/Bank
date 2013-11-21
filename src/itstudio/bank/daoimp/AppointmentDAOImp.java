@@ -19,7 +19,7 @@ import com.ibatis.sqlmap.client.SqlMapClient;
 public class AppointmentDAOImp implements AppointmentDAO{
 	private static SqlMapClient sqlMapClient=null;
 	private int start ;
-	private final int PAGESIZE =2 ;
+	private final int PAGESIZE =4 ;
 	
 	static {
 		try {

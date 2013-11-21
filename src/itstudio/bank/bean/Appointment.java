@@ -12,7 +12,7 @@ public class Appointment {
 	private String name;
 	private float tellphone;
 	private String email;
-	private Date time; 
+	private java.sql.Date time; 
 	private String type; 
 	private String content; 
 	private Date systemTime;
@@ -48,10 +48,10 @@ public class Appointment {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Date getTime() {
+	public java.sql.Date getTime() {
 		return time;
 	}
-	public void setTime(Date time) {
+	public void setTime(java.sql.Date time) {
 		this.time = time;
 	}
 	public String getType() {
@@ -75,7 +75,7 @@ public class Appointment {
 	public Appointment() {
 		// TODO Auto-generated constructor stub
 	}
-	public Appointment(String name,float tellphone,String email,Date time,String type,String content) {
+	public Appointment(String name,float tellphone,String email,java.sql.Date time,String type,String content) {
 		// TODO Auto-generated constructor stub
 		this.name=name;
 		this.tellphone=tellphone;
